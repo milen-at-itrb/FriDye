@@ -1,4 +1,4 @@
-name: Daily Teams Colour
+name: Friday Team Colour
 
 on:
   schedule:
@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
-      - name: Post daily colour
-        run: node colour.js
+      - name: Post colour
+        run: node colours.js
         env:
           TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
