@@ -176,14 +176,14 @@ const payload = {
             items: [
               {
                 type: "TextBlock",
-                text: `🎨 Team colour for ${formattedDate}`,
+                text: `Team colour for ${formattedDate}`,
                 weight: "Bolder",
                 size: "Large",
                 color: "Accent",
               },
               {
                 type: "TextBlock",
-                text: `${colour.name} — ${colour.hex}`,
+                text: `${colour.name} [${colour.hex}]`,
                 wrap: true,
                 size: "Medium",
               },
